@@ -11,13 +11,13 @@ jobs:
         python-version: 3.10.10
     - name: Install dependencies
       run: |
-        make install-gcp
+        make -f MakeFile install-gcp
     - name: Lint
       run: |
-        make lint
+        make -f MakeFile lint
     - name: Test
       run: |
-        make test
+        make -f MakeFile test
     - name: Format
       run: |
-        make format
+        make -f MakeFile  format
